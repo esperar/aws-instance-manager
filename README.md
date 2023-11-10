@@ -4,6 +4,7 @@ AWS 인스턴스 매니저(Instance Manager)
 
 AWS Instance들의 상태(실행, 중지, 종료)를 관리하는 여러가지 스크립트를 제공해줍니다.
 
+- [EC2 자동 중지 매니저](https://github.com/esperar/aws-instance-manager/tree/main/scripts/ec2)
 
 ## How to use
 
