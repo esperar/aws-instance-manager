@@ -1,8 +1,8 @@
 # AWS Instance Manager
 
-AWS Instance Manager입니다.
+AWS 인스턴스 매니저(Instance Manager)
 
-AWS Instance들의 상태(실행, 중지, 종료)와 같은 여러가지 유틸 스크립트를 제공해줍니다.
+AWS Instance들의 상태(실행, 중지, 종료)를 관리하는 여러가지 스크립트를 제공해줍니다.
 
 
 ## How to use
@@ -15,7 +15,7 @@ $ brew install awscli
 $ aws --version
 ```
 
-<br>
+---
 
 ### Clone or Download
 
