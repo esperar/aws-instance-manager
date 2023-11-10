@@ -15,10 +15,19 @@ $ brew install awscli
 $ aws --version
 ```
 
-### Clone 
+<br>
+
+### Clone or Download
+
+**clone**
 
 ```bash
 git clone https://github.com/esperar/aws-instance-manager.git
+```
+
+**Download**
+```bash
+curl -O https://github.com/esperar/aws-instance-manager/tree/main/scripts/<script_spath>
 ```
 
 ### Chmod, Execute Script
@@ -28,6 +37,7 @@ $ chmod -x <instance_scrpit>.sh
 $ ./<instance_script>.sh
 ```
 
+---
 
 ### 스케줄러 설정 (옵션)
 이 스크립트를 자동으로 실행하려면 리눅스 크론 또는 윈도우 스케줄러와 같은 작업 스케줄러를 사용할 수 있습니다.
@@ -44,7 +54,7 @@ $ crontab -e
 $ 0 2 * * * auto_stop_manager.sh
 ```
 
-
+<br>
 
 ### 주의사항
 이 스크립트들은 **사용자로부터 EC2 인스턴스 ID를 입력받습니다. 정확한 인스턴스 ID를 입력**하세요.
