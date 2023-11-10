@@ -7,9 +7,10 @@ then
     exit 1
 fi
 
-# AWS CLI를 사용하여 EC2 인스턴스의 현재 상태 확인
-instance_id="your-instance-id"  # EC2 인스턴스 ID를 여기에 입력하세요
+# 사용자로부터 인스턴스 ID 입력 받기
+read -p "EC2 인스턴스 ID를 입력하세요: " instance_id
 
+# AWS CLI를 사용하여 EC2 인스턴스의 현재 상태 확인
 instance_status=$(aws ec2 describe-instances --instance-ids $instance_id --query 'Reservations[0].Instances[0].State.Name' --output text)
 
 # 새벽에만 인스턴스 중지 및 시작 (예: 02:00부터 07:00까지)
